@@ -1,13 +1,44 @@
-# Reference Compilation
+# Basic-Programs-Python
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-markdown.svg)](https://forthebadge.com)
+print("Select Your Operation")
+print("1. ADD")
+print("2. SUBTRACT")
+print("3. MULTIPLY")
+print("4. DIVISION")
+print("5: MODULE")
 
-A reference compilation for python and a good place to start contributing! If you're new to this project, please go through the [CONTRIBUTING.md](CONTRIBUTING.md)
 
-## Is this your first time contributing?
-You can contribute to this project in three ways:
-1. [Raising an issue](CONTRIBUTING.md/#raising-an-issue)
-1. [Start a discussion](CONTRIBUTING.md/#starting-a-discussion)
-1. [Open a pull request](CONTRIBUTING.md/#opening-a-pr) (a.k.a a PR)
+operation = input()
 
-Feel free to @ me for any clarifications!
+if operation == "1":
+    num1 = input("Enter Your First Number:")
+    num2 = input("Enter Your Second Number: ")
+    print("The Sum Is " + str(int(num1) + int(num2)))
+
+elif operation == "2":
+    num1 = input("Enter Your First Number")
+    num2 = input("Enter Your Second Number")
+    print("The Sum Is " + str(int(num1) - int(num2)))
+
+elif operation == "3":
+    num1 = input("Enter Your First Number")
+    num2 = input("Enter Your Second Number")
+    print("The Sum Is " + str(int(num1) * int(num2)))
+
+elif operation == "4":
+    num1 = input("Enter Your First Number")
+    num2 = input("Enter Your Second Number")
+    print("The Sum Is " + str(int(num1) / int(num2)))
+
+elif operation == "5":
+    num1 = input("Enter Your First Number")
+    num2 = input("Enter Your Second Number")
+    print("The Sum Is " + str(int(num1) % int(num2)))
+
+else:
+   print("INVALID SYNTAX PLS TRY ANOTHER OPERATIONS")
+
+
+
+
+
